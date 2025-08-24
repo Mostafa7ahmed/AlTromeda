@@ -38,11 +38,10 @@ We focus on:
 ## 📞 Contact Us  
 Looking for a reliable tech partner? Let’s build something amazing together!  
 
-- 🌍 Website: [AlTromeda.com](#)  
+- 🌍 Website: [AlTromeda.com](https://altromeda.com/)  
 - 📧 Email: info@altromeda.com  
-- 📱 Phone: +20 123 456 7890  
-- 💼 LinkedIn: [AlTromeda](#)  
-
+- 📱 Phone: +20 101 885 6093  
+- 💼 LinkedIn: [AlTromeda](https://www.linkedin.com/company/altromeda/)  
 ---
 
 ⚡ *Crafting Digital Experiences That Matter* ⚡
