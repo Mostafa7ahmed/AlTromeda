@@ -1,91 +1,48 @@
-# 🧠 Angular Project Structure
+# AlTromeda Portfolio  
 
-This project is a modern Angular application that demonstrates a scalable and maintainable architecture. It leverages Bootstrap for responsive UI design, FontAwesome for a rich icon set, and JWT Decode for handling user authentication and session management.
-
----
-
-## 🚀 Key Technologies
-
--   **Angular 20**: The core framework for building the single-page application.
--   **Bootstrap**: Used for creating responsive layouts and UI components, ensuring a consistent look and feel across devices.
--   **FontAwesome**: Provides a comprehensive library of icons used throughout the application to enhance user experience.
--   **JWT Decode**: A lightweight library used to decode JSON Web Tokens (JWTs) on the client-side for managing user authentication state and permissions.
+Welcome to **AlTromeda Portfolio** 🚀  
+AlTromeda is a **software company** specializing in delivering high-quality digital solutions.  
+We craft modern websites, mobile applications, and elegant UI/UX designs tailored to your business needs.  
 
 ---
 
-## 📁 Project Structure
+## 🏢 About Us  
+AlTromeda is more than just a software house — we’re your technology partner.  
+We help businesses grow and stand out in the digital world by providing:  
+- 🌐 Website Development – fast, secure, and responsive web solutions  
+- 📱 Mobile Applications – Android & iOS apps with seamless performance  
+- 🎨 UI/UX Design – user-friendly and creative interfaces  
+- ⚙️ Custom Software Solutions – built to fit your unique requirements  
 
-The project is organized to separate concerns, making it easy to navigate, scale, and maintain.
+---
 
-```
-src/
-├── app/
-│   ├── core/
-│   │   ├── guards/
-│   │   ├── interceptors/
-│   │   ├── services/
-│   │   └── models/
-│   │
-│   ├── pages/ (or features/)
-│   │   ├── home/
-│   │   └── user-profile/
-│   │
-│   ├── shared/
-│   │   ├── components/
-│   │   ├── directives/
-│   │   ├── pipes/
-│   │   └── shared.module.ts
-│   │
-│   ├── app-routing.module.ts
-│   ├── app.component.ts
-│   └── app.module.ts
-│
-├── assets/
-│   ├── images/
-│   └── fonts/
-|
-│
-├── environments/
-│   ├── environment.ts
-│   └── environment.prod.ts
-│
-├── index.html
-├── main.ts
-└── styles.css
-```
+## 📂 Portfolio Highlights  
+This portfolio showcases some of our featured projects:  
+- Business Websites & E-Commerce Platforms  
+- Mobile Apps for different industries  
+- Interactive Dashboards & Admin Panels  
+- UI/UX case studies and prototypes  
 
+---
 
-## Installation
+## 💡 Our Mission  
+At **AlTromeda**, our mission is to turn ideas into powerful digital products.  
+We focus on:  
+- Innovation & creativity ✨  
+- Clean and maintainable code 🧑‍💻  
+- Client satisfaction ❤️  
+- Scalable and future-proof solutions 📈  
 
-1. Clone the repository
-```bash
-git clone <repository-url>
-cd structureAngular
-```
+---
 
-2. Install dependencies
-```bash
-npm install
-```
+## 📞 Contact Us  
+Looking for a reliable tech partner? Let’s build something amazing together!  
 
-3. Start the development server
-```bash
-ng serve
-```
+- 🌍 Website: [AlTromeda.com](#)  
+- 📧 Email: info@altromeda.com  
+- 📱 Phone: +20 123 456 7890  
+- 💼 LinkedIn: [AlTromeda](#)  
 
-4. Navigate to `http://localhost:4200/`
+---
 
-## Development
-
-- Run `ng generate component component-name` to generate a new component
-- Run `ng build` to build the project
-- Run `ng test` to execute unit tests
-
-## 👨‍💻 Developed By
-
-# ✨ Mostafa Hamed ✨
-
-🚀 Frontend Developer | Angular • React • Next.js  
-📧 Email: [mostafahamed3003@gmail.com](mailto:mostafahamed3003@gmail.com)  
-🌐 Portfolio: [portfoliomostafa-hamed.vercel.app](https://portfoliomostafa-hamed.vercel.app/)  
-
+⚡ *Crafting Digital Experiences That Matter* ⚡

@@ -1,0 +1,71 @@
+
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background-color: white;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: #2d0b52;
+  }
+
+  .logo-icon {
+    width: 25px;
+    height: 25px;
+    background: linear-gradient(135deg, #ffceec 0%, #9896f0 100%);
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: #6f7d93;
+    font-size: 14px;
+    transition: color 0.3s ease;
+  }
+
+  .nav-links a:hover {
+    color: #2d0b52;
+  }
+
+  .search-icon {
+    font-size: 16px;
+    color: #6f7d93;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+
+  .btn {
+    background-color: #3b5fff;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 20px;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn:hover {
+    background-color: #2e4dcc;
+  }
+
+  .right-section {
+    display: flex;
+    align-items: center;
+  }
