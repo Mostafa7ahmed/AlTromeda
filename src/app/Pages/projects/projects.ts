@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { PageHeader } from "../../components/page-header/page-header";
 
 @Component({
   selector: 'app-projects',
-  imports: [],
+  imports: [PageHeader],
   templateUrl: './projects.html',
   styleUrl: './projects.scss'
 })

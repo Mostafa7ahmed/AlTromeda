@@ -1,18 +1,89 @@
-<app-page-header
-  title="Contact Us"
+<app-page-header 
+  title="Contact Us" 
   breadcrumb="Contact Us"
->
+  data-aos="fade-down">
 </app-page-header>
 
-<div class="contactSection container  d-flex align-items-center ">
-    <div class="leftSide">
-        <img src="Image/contact-exp-min.webp" alt="">
+<div class="contactSection container d-flex align-items-center">
+  <div class="leftSide" data-aos="fade-right">
+    <img src="Image/contact-exp-min.webp" alt="" />
+  </div>
+  <div class="rightSideAugment" data-aos="fade-left">
+    <h2>Growth strategies to be effective & competitive</h2>
+    <p>
+      Everything we do and dream up has a solid design impact. We create human-centered enterprise
+      software that has the polished, snappy feel of the best consumer apps.
+    </p>
+    <button class="btn btn-augment" data-aos="zoom-in">Get Started</button>
+  </div>
+</div>
 
+<div class="contact-container container position-relative" data-aos="fade-up">
+  <div class="arrorSend position-absolute bottom-0" data-aos="fade-up" data-aos-delay="300">
+    <img src="Icons/letter_send 2.png" alt="arrow" width="320px"/>
+  </div>
+
+  <div class="contact-info-container" data-aos="fade-right">
+    <h2>Contact Information</h2>
+    <p>Say something to start a live chat!</p>
+
+    <div class="info-item" data-aos="fade-up" data-aos-delay="100">
+      <i class="fas fa-phone-alt"></i>
+      <span>+1012 3456 789</span>
     </div>
-      <div class="rightSideAugment">
-        <h2>
-Growth strategies to be effective & competitive</h2>
-        <p>Everything we do and dream up has a solid design impact. We create human-centered enterprise software that has the polished, snappy feel of the best consumer apps.</p>
-        <button class="btn btn-augment">Get Started</button>
+
+    <div class="info-item" data-aos="fade-up" data-aos-delay="200">
+      <i class="fas fa-envelope"></i>
+      <span>demo@gmail.com</span>
     </div>
+
+    <div class="info-item" data-aos="fade-up" data-aos-delay="300">
+      <i class="fas fa-map-marker-alt"></i>
+      <span>132 Dartmouth Street Boston</span>
+    </div>
+
+    <div class="social-icons" data-aos="zoom-in" data-aos-delay="500">
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fas fa-circle"></i></a>
+      <a href="#"><i class="fab fa-discord"></i></a>
+    </div>
+  </div>
+
+  <form class="contact-form" [formGroup]="contactForm" (ngSubmit)="onSubmit()" data-aos="fade-left">
+    <div class="row">
+      <div class="form-group" data-aos="fade-up" data-aos-delay="100">
+        <label>First Name</label>
+        <input type="text" formControlName="firstName" />
+      </div>
+      <div class="form-group" data-aos="fade-up" data-aos-delay="200">
+        <label>Last Name</label>
+        <input type="text" formControlName="lastName" />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="form-group" data-aos="fade-up" data-aos-delay="300">
+        <label>Email</label>
+        <input type="email" formControlName="email" />
+      </div>
+      <div class="form-group" data-aos="fade-up" data-aos-delay="400">
+        <label>Phone</label>
+        <input type="text" formControlName="phone" />
+      </div>
+    </div>
+
+    <div class="form-group full" data-aos="fade-up" data-aos-delay="500">
+      <label>Address</label>
+      <input type="text" formControlName="address" placeholder="Write your address.." />
+    </div>
+
+    <div class="form-group full" data-aos="fade-up" data-aos-delay="600">
+      <label>Message</label>
+      <textarea formControlName="message" placeholder="Write your message.."></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-augment" [disabled]="contactForm.invalid" data-aos="zoom-in" data-aos-delay="700">
+      Send Message
+    </button>
+  </form>
 </div>

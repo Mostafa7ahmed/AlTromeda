@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-testmonial',
@@ -8,6 +9,9 @@ import { Component } from '@angular/core';
   styleUrl: './testmonial.scss'
 })
 export class Testmonial {
+      ngOnInit(): void {
+    AOS.init({ once: true });
+  }
   testimonials = [
     {
       name: 'Ernest Smith',

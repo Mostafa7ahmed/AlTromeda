@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-augment',
@@ -8,4 +9,7 @@ import { Component } from '@angular/core';
 })
 export class Augment {
 
+      ngOnInit(): void {
+      AOS.init({ once: true });
+    }
 }

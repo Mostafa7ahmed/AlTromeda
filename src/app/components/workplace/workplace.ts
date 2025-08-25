@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 
+import * as AOS from 'aos';
 @Component({
   selector: 'app-workplace',
   imports: [CommonModule],
@@ -13,7 +14,6 @@ export class Workplace implements OnInit {
     'Icons/Android.svg',
     'Icons/Bootstrap.svg',
     'Icons/Flutter.svg',
-    'Icons/Visual Studio Code (VS Code).svg',
   ];
 
   innerIcons = [
@@ -38,6 +38,7 @@ export class Workplace implements OnInit {
   ngOnInit(): void {
     this.outerPositions = this.outerIcons.map(() => ({ x: 0, y: 0 }));
     this.innerPositions = this.innerIcons.map(() => ({ x: 0, y: 0 }));
+      AOS.init({ once: true });
 
     this.animate();
   }
@@ -68,4 +69,7 @@ export class Workplace implements OnInit {
 
     requestAnimationFrame(() => this.animate());
   }
+
+
+   
 }
