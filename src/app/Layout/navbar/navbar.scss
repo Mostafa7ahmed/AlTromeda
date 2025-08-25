@@ -12,7 +12,7 @@
     display: flex;
     align-items: center;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 24px;
     color: #2d0b52;
   }
 
@@ -33,8 +33,10 @@
   .nav-links a {
     text-decoration: none;
     color: #6f7d93;
-    font-size: 14px;
+    font-weight: 500;
+    font-size: 18px;
     transition: color 0.3s ease;
+    margin-bottom: 0;
   }
 
   .nav-links a:hover {
@@ -69,3 +71,13 @@
     display: flex;
     align-items: center;
   }
+
+  
+.cl-with-gradient {
+    background: linear-gradient(272.54deg, #FFABE6 12.86%, #857FFF 68.06%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+      font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
