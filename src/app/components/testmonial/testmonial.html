@@ -1,0 +1,17 @@
+<div class="testmonial">
+    <div class="cardTestmonial">
+  <div class="testimonial-card" *ngFor="let t of testimonials">
+    <div class="avatar-wrapper d-flex align-items-center gap-3">
+    <img [src]="t.image" alt="{{t.name}}" class="avatar" />
+        <div class="info">    <h3>{{t.name}}</h3>
+    <p class="role">{{t.role}}</p>
+    <div class="stars">
+      ★★★★★
+    </div></div>
+    </div>
+
+    <p class="quote">"{{t.quote}}"</p>
+  </div>
+    </div>
+
+</div>

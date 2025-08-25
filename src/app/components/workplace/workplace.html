@@ -1,0 +1,69 @@
+<section class="workplace-section ">
+  <div class="container d-flex justify-content-between align-items-center">
+    <div>
+      <h2>
+        A workplace focused on experience and<br />
+        enabling teams to work together better
+      </h2>
+      <p>
+        How we work is changing, and businesses must find new and better ways to
+        communicate, collaborate, and automate to support employees in a world
+        transitioning to hybrid work.
+      </p>
+
+      <a href="#" class="btn-primary">Get Started</a>
+    </div>
+
+    <div class="circle-wrapper">
+      <svg class="dashed-circle outer" viewBox="0 0 400 400">
+        <circle
+          cx="200"
+          cy="200"
+          r="160"
+          fill="none"
+          stroke="#d0d5ff"
+          stroke-width="2"
+          stroke-dasharray="6,6"
+        />
+      </svg>
+
+      <!-- ✅ outerIcons بـ @for -->
+      @for (icon of outerIcons; track $index) {
+        <div
+          class="icon"
+          [ngStyle]="{
+            'left.px': outerPositions[$index].x,
+            'top.px': outerPositions[$index].y
+          }"
+        >
+          <img [src]="icon" alt="icon" />
+        </div>
+      }
+
+      <svg class="dashed-circle inner" viewBox="0 0 400 400">
+        <circle
+          cx="200"
+          cy="200"
+          r="100"
+          fill="none"
+          stroke="#d0d5ff"
+          stroke-width="2"
+          stroke-dasharray="6,6"
+        />
+      </svg>
+
+      <!-- ✅ innerIcons بـ @for -->
+      @for (icon of innerIcons; track $index) {
+        <div
+          class="icon small"
+          [ngStyle]="{
+            'left.px': innerPositions[$index].x,
+            'top.px': innerPositions[$index].y
+          }"
+        >
+          <img [src]="icon" alt="icon" />
+        </div>
+      }
+    </div>
+  </div>
+</section>

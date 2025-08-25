@@ -1,0 +1,79 @@
+.boxTopLeft {
+  left: -120px;
+  rotate: 18deg;
+}
+.boxbottomRight {
+  right: -70px;
+  bottom: -50px;
+}
+.augment {
+  gap: 150px;
+}
+.rightSideAugment {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+}
+.rightSideAugment h2 {
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: none;
+  font-weight: 700;
+  color: var(--text-hero);
+}
+.rightSideAugment p {
+  font-size: 20px;
+  color: #808dab;
+  line-height: 30px;
+  margin-top: 10px;
+}
+
+.btn-augment {
+  background-color: #3b5fff;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+.btn-augment:hover {
+  background-color: #2d0b52;
+}
+.cardCustomers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  color: white;
+  top: 176px;
+  right: -88.1px;
+  width: 180px;
+  padding: 50px;
+  position: absolute;
+  border-radius: 40px;
+  z-index: 2;
+
+  background: url('https://preview.codeless.co/converta/default/wp-content/uploads/2023/02/vectors-group.png')
+      center/cover repeat,
+    linear-gradient(90deg, #ffc947 -0.92%, #eb9823 100%);
+  h3 {
+    font-size: 52px;
+    line-height: 40px;
+    font-family: 'Permanent Marker', cursive;
+  }
+  p {
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: white;
+    font-weight: 900;
+  }
+}
