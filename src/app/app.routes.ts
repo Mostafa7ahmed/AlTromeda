@@ -5,40 +5,53 @@ import { isAuthGuard } from './Core/guards/is-auth.guard';
 export const routes: Routes = [
   {
     path: '',
-    pathMatch: 'full',
-    redirectTo: 'home',
+    loadComponent: () =>
+      import('./components/loading/loading').then((m) => m.Loading),
+title: 'Al Tromeda | Loading' ,
   },
-
   {
     path: 'home',
-    loadComponent: () => import('./Pages/home/home').then((m) => m.Home),
+    loadComponent: () =>
+      import('./Pages/home/home').then((m) => m.Home),
+    title: 'Al Tromeda | Home' ,
   },
   {
     path: 'about',
-    loadComponent: () => import('./Pages/about/about').then((m) => m.About),
+    loadComponent: () =>
+      import('./Pages/about/about').then((m) => m.About),
+  title: 'Al Tromeda | About' ,
   },
   {
     path: 'services',
-    loadComponent: () => import('./Pages/services/services').then((m) => m.Services),
+    loadComponent: () =>
+      import('./Pages/services/services').then((m) => m.Services),
+     title: 'Al Tromeda | Services' ,
   },
   {
     path: 'projects',
-    loadComponent: () => import('./Pages/projects/projects').then((m) => m.Projects),
+    loadComponent: () =>
+      import('./Pages/projects/projects').then((m) => m.Projects),
+     title: 'Al Tromeda | Projects' ,
   },
   {
     path: 'teams',
-    loadComponent: () => import('./Pages/teams/teams').then((m) => m.Teams),
-  },
+    loadComponent: () =>
+      import('./Pages/teams/teams').then((m) => m.Teams),
+    title: 'Al Tromeda | Teams' },
+
   {
     path: 'contact',
-    loadComponent: () => import('./Pages/contact/contact').then((m) => m.Contact),
+    loadComponent: () =>
+      import('./Pages/contact/contact').then((m) => m.Contact),
+    title: 'Al Tromeda | Contact'
   },
   {
     path: 'login',
-    loadComponent: () => import('./Pages/Auth/login/login').then((m) => m.Login),
+    loadComponent: () =>
+      import('./Pages/Auth/login/login').then((m) => m.Login),
     canActivate: [isAuthGuard],
+    title: 'Al Tromeda | Login'
   },
-
   {
     path: '**',
     redirectTo: 'home',

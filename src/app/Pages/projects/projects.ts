@@ -29,7 +29,7 @@ export class Projects {
       date: '22 Jan 2023',
       title: '10 Essential Plumbing Tips for Every Homeowner',
       excerpt: 'Ten valuable plumbing tips that every homeowner should know...',
-      tags: ['Plumbing', 'Maintenance']
+      tags: ['Plumbing', 'Maintenance', 'Plumbing', 'Maintenance', 'Plumbing', 'Maintenance']
     },
     {
       image: 'Image/uiux.jpg',
