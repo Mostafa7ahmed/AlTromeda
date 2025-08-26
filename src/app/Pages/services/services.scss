@@ -1,0 +1,136 @@
+.service {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.service h3 {
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -2px;
+
+    margin-bottom: 1rem !important;
+    color: #2D3958;
+}
+
+.service p {
+    font-size: 18px;
+    line-height: 28px;
+
+    color: #8692af;
+    max-width: 550px;
+}
+
+.contacntService {
+    gap: 150px;
+    margin-top: 100px;
+
+    padding: 100px 0;
+}
+
+
+.boxbottomRight {
+    bottom: 120px;
+    left: -130px;
+}
+
+.rightSideAugment {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.rightSideAugment h2 {
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: none;
+    font-weight: 700;
+    color: var(--text-hero);
+}
+
+.rightSideAugment p {
+    font-size: 20px;
+    color: #808dab;
+    line-height: 30px;
+    margin-top: 10px;
+}
+
+.btn-augment {
+    background-color: #3b5fff;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.btn-augment:hover {
+    background-color: #2d0b52;
+}
+
+.cardCustomers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    color: white !important;
+    bottom: 60px;
+    right: -88.1px;
+    min-width: 150px;
+    width: auto;
+    padding: 20px;
+    position: absolute;
+    z-index: 2;
+
+    background: url('https://preview.codeless.co/converta/default/wp-content/uploads/2023/02/vectors-group.png') center/cover repeat,
+        linear-gradient(90deg, #4C6FFF -0.92%, #4C6FFF 100%);
+
+    h3 {
+        font-size: 43px;
+        font-family: 'Permanent Marker', cursive;
+        color: white !important;
+        margin-bottom: 0 !important;
+
+    }
+
+    p {
+        font-size: 14px;
+        text-align: center;
+        color: white;
+        white-space: nowrap;
+        font-weight: 900;
+    }
+
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+.cardService{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: start;
+    gap: 10px;
+    padding: 30px 0; 
+    .Icons{
+        padding: 15px;
+        border-radius: 50%;
+        background-color: #4C6FFF2E;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
