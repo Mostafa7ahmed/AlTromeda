@@ -124,7 +124,9 @@
     
     align-items: start;
     gap: 10px;
-    padding: 30px 0; 
+    width: 300px;
+
+    padding: 20px  0; 
     .Icons{
         padding: 15px;
         border-radius: 50%;
@@ -133,4 +135,11 @@
         justify-content: center;
         align-items: center;
     }
+
+    // p{
+    //     font-size: 16px;
+    //     line-height: 28px;
+    //     color: #8692af;
+    //     max-width: 350px;
+    // }
 }
