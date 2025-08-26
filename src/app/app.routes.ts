@@ -1,18 +1,22 @@
 import { Routes } from '@angular/router';
 import { authGuard } from './Core/guards/auth.guard';
 import { isAuthGuard } from './Core/guards/is-auth.guard';
+import { Home } from './Pages/home/home';
+import { Loading } from './components/loading/loading';
 
 export const routes: Routes = [
   {
     path: '',
-    loadComponent: () =>
-      import('./components/loading/loading').then((m) => m.Loading),
+  pathMatch: 'full',
+    redirectTo: 'home',
+  },
+  {
+
 title: 'Al Tromeda | Loading' ,
   },
   {
     path: 'home',
-    loadComponent: () =>
-      import('./Pages/home/home').then((m) => m.Home),
+    component: Home,
     title: 'Al Tromeda | Home' ,
   },
   {
