@@ -1,0 +1,145 @@
+.container {
+    display: flex;
+    gap: 100px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.text-content {
+    max-width: 450px;
+}
+
+.text-content h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1e2a4a;
+    margin-bottom: 20px !important;
+    line-height: 1.4;
+}
+
+
+.text-content p {
+    font-size: 16px;
+    color: #6b7280;
+    max-width: 650px;
+    margin: 0 auto 40px !important;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 14px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #3a53d9;
+}
+
+.image-box img {
+    width: 480px;
+    height: auto;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+/* Responsive */
+@media(max-width: 900px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-box img {
+        width: 100%;
+    }
+}
+
+
+.section {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 80px 100px;
+    background: #f8fafc;
+    border-radius: 20px;
+
+    @media (max-width: 1024px) {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.content {
+    max-width: 550px;
+
+    h2 {
+        font-size: 32px;
+        font-weight: 700;
+        color: #1e293b;
+        margin-bottom: 20px !important;
+    }
+
+    p {
+        font-size: 16px;
+        color: #64748b;
+        line-height: 1.7;
+        margin-bottom: 30px !important;
+    }
+
+    .features {
+        display: flex;
+        gap: 60px;
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                font-size: 16px;
+                color: #1e293b;
+                margin-bottom: 15px !important;
+                position: relative;
+                padding-left: 25px;
+
+                &::before {
+                    content: "✔";
+                    position: absolute;
+                    left: 0;
+                    color: #22c55e; // green check
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+
+    .cardImage {
+        border-radius: 16px;
+        padding: 20px;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            object-fit: cover;
+        }
+    }
+}
