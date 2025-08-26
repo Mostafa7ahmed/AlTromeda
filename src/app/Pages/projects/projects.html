@@ -3,3 +3,32 @@
   breadcrumb="Porjects"
 >
 </app-page-header>
+
+<div class="container">
+  <div class="filter-bar ">
+  <button 
+    *ngFor="let cat of categories" 
+    [class.active]="selectedCategory === cat"
+    (click)="filterPosts(cat)">
+    {{cat}}
+  </button>
+</div>
+
+<div class="posts-grid">
+  <div 
+    class="post-card" 
+    *ngFor="let post of filteredPosts" 
+    data-aos="fade-up" 
+    data-aos-duration="800">
+    
+    <img [src]="post.image" alt="{{post.title}}">
+    <p class="date">{{post.date}}</p>
+    <h3>{{post.title}}</h3>
+    <p class="excerpt">{{post.excerpt}}</p>
+    <div class="tags">
+      <span *ngFor="let tag of post.tags">{{tag}}</span>
+    </div>
+  </div>
+</div>
+
+</div>
