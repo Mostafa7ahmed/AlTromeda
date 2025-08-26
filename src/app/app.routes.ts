@@ -10,51 +10,48 @@ export const routes: Routes = [
   pathMatch: 'full',
     redirectTo: 'home',
   },
-  {
-
-title: 'Al Tromeda | Loading' ,
-  },
+ 
   {
     path: 'home',
     component: Home,
-    title: 'Al Tromeda | Home' ,
+    title: 'Altromeda | Home' ,
   },
   {
     path: 'about',
     loadComponent: () =>
       import('./Pages/about/about').then((m) => m.About),
-  title: 'Al Tromeda | About' ,
+  title: 'Altromeda | About' ,
   },
   {
     path: 'services',
     loadComponent: () =>
       import('./Pages/services/services').then((m) => m.Services),
-     title: 'Al Tromeda | Services' ,
+     title: 'Altromeda | Services' ,
   },
   {
     path: 'projects',
     loadComponent: () =>
       import('./Pages/projects/projects').then((m) => m.Projects),
-     title: 'Al Tromeda | Projects' ,
+     title: 'Altromeda | Projects' ,
   },
   {
     path: 'teams',
     loadComponent: () =>
       import('./Pages/teams/teams').then((m) => m.Teams),
-    title: 'Al Tromeda | Teams' },
+    title: 'Altromeda | Teams' },
 
   {
     path: 'contact',
     loadComponent: () =>
       import('./Pages/contact/contact').then((m) => m.Contact),
-    title: 'Al Tromeda | Contact'
+    title: 'Altromeda | Contact'
   },
   {
     path: 'login',
     loadComponent: () =>
       import('./Pages/Auth/login/login').then((m) => m.Login),
     canActivate: [isAuthGuard],
-    title: 'Al Tromeda | Login'
+    title: 'Altromeda | Login'
   },
   {
     path: '**',
