@@ -172,15 +172,24 @@
   }
 }
 
-/* Responsive */
 @media (max-width: 768px) {
+  .newsletter{
+    display: none
+  }
   .footer-container {
     flex-direction: column;
     gap: 40px;
+        .footer-brand{
+                      flex: none !important;
+
+        }
 
     .footer-links {
-      justify-content: flex-start;
+      justify-content: space-evenly !important;
+      flex-wrap: wrap    !important;;
       gap: 40px;
+            flex: none !important;
+
     }
   }
 

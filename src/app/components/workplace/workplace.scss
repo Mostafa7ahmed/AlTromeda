@@ -107,3 +107,33 @@ p {
     width: 25px;
     height: 25px;
 }
+
+@media (max-width: 768px) {
+    .workplace-section {
+        padding: 60px 10px;
+        text-align: center;
+    }
+
+    .workplaceColumn {
+        flex-direction: column !important;
+        gap: 40px !important;
+    }
+
+   
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+        max-width: 100%;
+        margin-bottom: 30px !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .circle-wrapper {
+     display: none;
+    }
+}

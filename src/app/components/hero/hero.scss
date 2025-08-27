@@ -67,3 +67,47 @@
     color: #2d0b52;
 }
 
+@media (max-width: 992px) {
+    .heroSection {
+        background: #f2f2fc;
+        background-position: center;
+        width: 100%;
+    }
+
+    .dataHero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .heading-title {
+
+        width: 90%;
+    }
+
+    .decHero {
+        width: 90%;
+
+    }
+
+
+}
+@media (max-width: 600px) {
+
+
+    .heading-title {
+        font-size:45px;
+
+        width: 100%;
+        text-align: center;
+    }
+
+    .decHero {
+        width: 90%;
+        text-align: center;
+
+    }
+
+
+}

@@ -69,3 +69,19 @@
 text-align: center;
 
 }
+
+@media (max-width: 768px) {
+  .testmonial{
+    height: auto;
+    padding: 40px 20px;
+  }
+  .cardTestmonial {
+    flex-direction: column;
+  }
+
+  .testimonial-card {
+    max-width: 100% !important;
+    margin-bottom: 20px;
+    flex: none;
+  }
+}

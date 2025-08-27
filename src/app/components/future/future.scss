@@ -62,3 +62,21 @@
 .feature-box a:hover {
     color: #2d0b52;
 }
+
+@media (max-width: 768px) {
+    .section h2 {
+        font-size: 38px;
+        line-height: 40px;
+        width: 100%;
+        text-align: center;
+    }
+    .feature-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        gap: 20px;
+        width: 90%;
+    }
+}

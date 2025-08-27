@@ -1,78 +1,18 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  background-color: white;
+}
 
-
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
-    background-color: white;
-  }
-
-  .logo {
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-    font-size: 24px;
-    color: #2d0b52;
-  }
-
-  .logo-icon {
-    width: 25px;
-    height: 25px;
-    background: linear-gradient(135deg, #ffceec 0%, #9896f0 100%);
-    border-radius: 50%;
-    margin-right: 8px;
-  }
-
-  .nav-links {
-    display: flex;
-    list-style: none;
-    gap: 25px;
-  }
-
-  .nav-links a {
-    text-decoration: none;
-    color: #6f7d93;
-    font-weight: 500;
-    font-size: 18px;
-    transition: color 0.3s ease;
-    margin-bottom: 0;
-  }
-
-  .nav-links a:hover {
-    color: #2d0b52;
-  }
-
-  .search-icon {
-    font-size: 16px;
-    color: #6f7d93;
-    cursor: pointer;
-    margin-left: 20px;
-  }
-
-  .btn {
-    background-color: #3b5fff;
-    color: white;
-    border: none;
-    padding: 8px 18px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: bold;
-    margin-left: 20px;
-    transition: background-color 0.3s ease;
-  }
-
-  .btn:hover {
-    background-color: #2e4dcc;
-  }
-
-  .right-section {
-    display: flex;
-    align-items: center;
-  }
-
-  
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 24px;
+  color: #2d0b52;
+}
 .cl-with-gradient {
     background: linear-gradient(272.54deg, #FFABE6 12.86%, #857FFF 68.06%);
     -webkit-background-clip: text;
@@ -80,4 +20,173 @@
       font-family: "Permanent Marker", cursive;
   font-weight: 400;
   font-style: normal;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+
+  a {
+    text-decoration: none;
+    color: #6f7d93;
+    font-weight: 500;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+
+  a:hover {
+    color: #2d0b52;
+  }
+}
+
+.active-link {
+  color: #3b5fff !important;
+  font-weight: bold;
+  position: relative;
+  display: inline-block; 
+}
+
+.active-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;                
+  height: 2px;
+  background: #3b5fff;
+  transition: width 0.4s ease-in-out;   
+}
+
+.active-link.router-link-active::after {
+  width: 100%;  
+}
+
+.search-icon {
+  font-size: 16px;
+  color: #6f7d93;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.btn {
+  background-color: #3b5fff;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 20px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #2e4dcc;
+  }
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin-left: 20px;
+
+  span {
+    height: 3px;
+    width: 25px;
+    background: #2d0b52;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+}
+
+.overlay {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    top: 0;
+    left: -100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: left 0.5s ease;
+    background-image: url("../../../../public/Image/Bg (3).png");
+    background-position: center left;
+    background-size: cover;
+    background-repeat: no-repeat;
+  ul {
+    list-style: none;
+    text-align: center;
+
+    li {
+      margin: 20px 0;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 0.5s forwards;
+    }
+
+    li:nth-child(1) { animation-delay: 0.2s; }
+    li:nth-child(2) { animation-delay: 0.4s; }
+    li:nth-child(3) { animation-delay: 0.6s; }
+    li:nth-child(4) { animation-delay: 0.8s; }
+    li:nth-child(5) { animation-delay: 1s; }
+
+    a {
+      font-size: 28px;
+      color: #2d0b52;
+      font-weight: bold;
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #3b5fff;
+      }
+    }
+  }
+}
+
+.overlay.active {
+  left: 0;
+}
+.close-btn {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  font-size: 40px;
+  background: none;
+  border: none;
+  color: #2d0b52;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    color: #3b5fff;
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 992px) {
+  .nav-links {
+    display: none;
+  }
+
+  .btn{
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
 }

@@ -77,3 +77,35 @@
     font-weight: 900;
   }
 }
+
+@media (max-width: 768px) {
+  .augment {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+  }
+  .rightSideAugment {
+    width: 90%;
+    align-items: center;
+    text-align: center;
+  }
+  .img-agency-22{
+    width: 80%;
+  }
+
+  .cardCustomers {
+   display: none;
+  }
+  .boxTopLeft {
+        left: -30px;
+        rotate: 23deg;
+        img{
+          width: 100px;
+        }
+}
+.boxbottomRight {
+  right: 0px;
+  bottom: -50px;
+}
+}
