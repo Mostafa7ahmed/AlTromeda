@@ -1,8 +1,10 @@
 .filter-bar {
   display: flex;
   gap: 10px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin-bottom: 20px;
+  scrollbar-width: none; /* Firefox */
+  overflow: auto;
 }
 
 .filter-bar button {

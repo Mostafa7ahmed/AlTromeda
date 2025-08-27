@@ -118,16 +118,18 @@
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
 }
-.cardService{
+
+.cardService {
     display: flex;
     flex-direction: column;
-    
+
     align-items: start;
     gap: 10px;
     width: 300px;
 
-    padding: 20px  0; 
-    .Icons{
+    padding: 20px 0;
+
+    .Icons {
         padding: 15px;
         border-radius: 50%;
         background-color: #4C6FFF2E;
@@ -142,4 +144,73 @@
     //     color: #8692af;
     //     max-width: 350px;
     // }
+}
+
+@media (max-width: 1025px) {
+    .service h3 {
+        font-size: 45px;
+        line-height: 56px;
+        letter-spacing: 0;
+
+        text-align: center;
+    }
+
+    .service p {
+
+        text-align: center;
+
+    }
+
+    .contacntService {
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center !important;
+
+    }
+
+    .rightSideAugment {
+        width: 100% !important;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    .cardsService {
+        justify-content: space-around !important;
+        align-items: center !important;
+        gap: 70px;
+    }
+}
+
+@media (max-width: 768px) {
+    .img-agency {
+        width: 400px !important;
+    }
+    .boxbottomRight{
+        display: none !important;
+    }
+}
+
+@media (max-width: 648px) {
+    .img-agency {
+        width: 350px !important;
+    }
+
+
+}
+@media (max-width: 648px) {
+    .cardCustomers{
+        width: 100px !important;
+        bottom: 10px !important;
+        right: 30px !important;
+    }
+
+
+}
+@media (max-width: 450px) {
+      .img-agency {
+        width: 90% !important;
+    }
+
+
 }

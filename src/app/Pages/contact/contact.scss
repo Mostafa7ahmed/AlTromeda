@@ -165,3 +165,49 @@
    
   }
 }
+
+@media only screen and (max-width: 990px) {
+  .contactSection {
+    flex-direction: column;
+    padding: 20px;
+    gap: 50px;
+  }
+.leftSide img{
+    width: 100%;
+}
+  .rightSideAugment {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .rightSideAugment h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .rightSideAugment p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .contact-info-container,
+  .contact-form {
+    width: 100%;
+  }
+    .contact-info-container  {
+      width: 100% !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+  .arrorSend{
+    display: none;
+  }
+}
